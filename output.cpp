@@ -56,6 +56,10 @@ public:
         if (match_and_inc("register"))
           result = "reregister ";
         break;
+      case 'C':
+        if (match_and_inc("CLASS_NAME"))
+          result = "claclass_name";
+        break;
       case 'F':
         if (match_and_inc("FUNCTION_NAME"))
           result = "fufunction";
@@ -77,6 +81,10 @@ public:
           result = "strstringpool";
         else if (match_and_inc("SLOT_NAME"))
           result = "sloslotname";
+        break;
+      case 'V':
+        if (match_and_inc("VERSION"))
+          result = "verversion";
         break;
       case 'W':
         if (match_and_inc("WORDLIST_NAME"))
